@@ -14,6 +14,6 @@
 **HOW TO USE IT?**
 
 1. Copy the API URL which is connected to the Shortener.js Lambda function.
-2. Paste it in a browser. Add the input parameter as follows 
+2. Paste it in a browser. Add the input parameter as follows: 
     api.domain.com/resource_name?longURL=https://thelongURL
 3. It should return a JSON response with the shorturl.
