@@ -17,3 +17,15 @@
 2. Paste it in a browser. Add the input parameter as follows: 
     api.domain.com/resource_name?longURL=https://thelongURL
 3. It should return a JSON response with the shorturl.
+
+
+**HOW IT WORKS?**
+
+The API connected to the Shortener.js function works as a trigger which accpets the longURL as the argument from the user. Once you do that the lambda function is executed.
+
+The function contains an event as an input parameter which is sent by the trigger which is in this case the API Gateway, which has the input parameter longURL. Inside the function there is a variable named shortid which generates a random ID each time the function is triggered, which can be used to map the longURL to it in the Database. 
+
+Once the function is triggered, the shortid generates a random id and the longURL including the shortid is pushed into the database in which the shortid is the primary key. So when you do need to access the link you can use shortid to access the URL mapped to it.
+
+
+
