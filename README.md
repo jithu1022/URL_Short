@@ -27,5 +27,5 @@ The function contains an event as an input parameter which is sent by the trigge
 
 Once the function is triggered, the shortid generates a random id and the longURL including the shortid is pushed into the database in which the shortid is the primary key. So when you do need to access the link you can use shortid to access the URL mapped to it.
 
-
+The API connected to the getLong.js function works as a trigger which accpets the shortid as the argument from the user. The function then retrieves the longURL associated with the shortid given by the user and is redirected to the longURL.
 
